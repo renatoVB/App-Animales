@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: 1
+  fecha_nac: 2015-03-24
+  sexo: 1
+  descripcion: MyText
+
+two:
+  codigo: 1
+  fecha_nac: 2015-03-24
+  sexo: 1
+  descripcion: MyText

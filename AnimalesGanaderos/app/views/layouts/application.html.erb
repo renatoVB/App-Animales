@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animales Ganaderos</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+		<% if user_signed_in? %>
+		<nav class="menu">
+			<ul class="no-list row center-xs">
+				<li class="col-md">
+					<h1><%= link_to "Inicio ", animals_path %></h1>
+				</li>
+				<li class="col-md">
+					<h1><%= link_to "Cerrar sesión ", destroy_user_session_path, method: :delete %></h1>
+				</li>				
+			</ul>
+
+		</nav>
+		<% end %>
+		<%= yield %>
+	</header>
+<!-- <p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p> -->
+
+
+</body>
+</html>
